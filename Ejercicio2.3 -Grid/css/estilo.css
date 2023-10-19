@@ -1,0 +1,129 @@
+header{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 90% 100%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+nav{
+    text-align: center;
+    border-left: black 1.6px solid;
+    border-right: black 1.6px solid;
+    border-top: rgba(0, 0, 0, 0) 0.01px solid;
+    border-bottom: rgba(0, 0, 0, 0) 0.01px solid;
+
+    display: grid;
+    grid-column: 1/ span 2;
+}
+.contenido{display: grid;
+    grid-template-columns: 69% 30%;
+    grid-template-rows: 100%; /* Divide en dos columnas de igual ancho */
+    gap: 10px;}
+
+#menu{
+    margin: 1px;
+}
+#video{
+    width: auto;
+    height: auto;
+    place-items: center;
+}
+body{
+    /* width: 99%; */
+    background-color: lightgray;
+    font-family: sans-serif;
+} 
+
+#Zubiri{ 
+    /* width: 90%; */
+    display: grid;
+    grid-column: 1;
+}
+#logoPeque{
+    display: grid;
+
+    width: 50px; 
+    height:50px;
+    border: black 1.6px solid;
+    border-radius: 50%;
+    justify-items:end;
+
+    grid-column: 2;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.bordes{
+    border: black 1.6px solid;
+    
+} 
+ul{margin:0.5%}  
+
+.botones{
+    text-align:center;
+    list-style-type: none;
+    display:inline-block;
+    border: black 1.6px solid;
+    width: 10%;
+    padding: 0.5%;
+}
+.botones:hover{
+    background-color: orangered;
+    color: white;
+
+}
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+#izq{
+/* 
+    width: 63.5%; */
+    height: 50%;
+    text-align:center;
+    padding: 1%;
+    margin: 0px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+hr{
+    width: 100%;
+}
+#noticias{
+    padding: 1.5%;
+    border-bottom: black 1.6px solid;
+}
+#videoInfo{
+    text-align:center;
+
+
+}
+#der{
+    /* width: 34.2% ; */
+    text-align:center;
+    grid-column: 2;
+    grid-row: 1;
+    border-left: black 1.6px solid;
+
+    
+}
+#logoGrande{
+    margin:auto;
+    width: 150px; 
+    height:150px;
+    
+}
+footer{
+    padding: 2%;
+    grid-column:1 / span 2;
+    align-items: center;
+    vertical-align: middle;
+}
+#piepag{
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    display: block;
+}

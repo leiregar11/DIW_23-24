@@ -1,0 +1,119 @@
+header{
+    
+    padding: 2%;
+    vertical-align: middle;
+}
+
+nav{
+    
+    text-align: center;
+    border-left: black 1.6px solid;
+    border-right: black 1.6px solid;
+    border-top: rgba(0, 0, 0, 0) 0.01px solid;
+    border-bottom: rgba(0, 0, 0, 0) 0.01px solid;
+}
+
+
+#menu{
+    margin: 2px;
+}
+#video{
+    width: auto;
+    height: auto;
+}
+body{
+    /* width: 99%; */
+    background-color: lightgray;
+    font-family: sans-serif;
+}    
+ 
+#Zubiri{ 
+    width: 90%;
+    display:inline-block;
+}
+#logoPeque{
+    display:inline-block;
+    width: 50px; 
+    height:50px;
+    border: black 1.6px solid;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+ .bordes{
+    border: black 1.6px solid;
+        
+} 
+    
+
+.botones{
+    text-align:center;
+    list-style-type: none;
+    display:inline-block;
+    border: black 1.6px solid;
+    width: 10%;
+}
+.botones:hover{
+    background-color: orangered;
+    color: white;
+
+}
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+/* .textDiv{
+    width: 100%;
+} */
+
+#izq{
+
+    width: 63.5%;
+    height: 50%;
+    float: left;
+    text-align:center;
+    padding: 1%;
+    margin: 0px;
+
+    border-right: black 1.6px solid;
+}
+
+hr{
+    width: 100%;
+}
+#noticias{
+    padding: 1.5%;
+    border-bottom: black 1.6px solid;
+}
+
+#der{
+    width: 34.2% ;
+    height: 50%;
+
+    float: right;
+    text-align:center;
+    
+}
+#logoGrande{
+    margin:auto;
+    display: block;
+    width: 150px; 
+    height:150px;
+    
+}
+footer{
+    margin-bottom: 2px;
+    margin-top: 25.5%;
+    border-bottom: 0px !important; 
+    border-left: 0px !important; 
+    border-right: 0px !important; 
+    /* background-color: brown; */
+    height: 20%;
+}
+#piepag{
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    display: block;
+}

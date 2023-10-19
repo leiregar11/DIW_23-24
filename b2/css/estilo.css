@@ -1,0 +1,81 @@
+@import url(colores.css);
+#escudo {
+    height: 70px;
+    width: auto;
+    margin-right: 2%;
+  }
+#escudoFooter{
+  height: 10rem;
+  width: auto;
+  margin-right: 2%;
+}
+
+.carrusel{
+        border-radius: 5px;
+        float: left;
+        margin-right: 15px;
+    }
+p{
+  text-align: justify;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color:var(--letraFondo) !important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+h4{
+  color: var(--resaltar);
+  font-weight: bold;
+}
+
+.custom-toggler.navbar-toggler:hover  {
+  background-color: var(--resaltar);
+  
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 ;
+}
+
+.imgHistoria{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  float: right;
+}
+.nav-link{
+  color: var(--letraFondo) !important;
+}
+.nav-link:hover{
+  color: var(--resaltar) !important;
+  border: solid 2px var(--resaltar);
+  border-radius: 0.375rem;
+}
+
+a h1{
+  color: var(--resaltar)!important;
+}
+.NavFooter{
+  background-color: var(--fondo) !important;
+  color: var(--letraFondo)!important;
+}
+.contenidoPag{
+  margin-top: 2%;
+}
+
+.iconos{
+  color: var(--resaltar);
+}
+.enlaceFondoOscuro{
+  color: var(--enlacesFooter);
+  text-decoration: none;
+}
+.enlaceFondoOscuro:hover{
+  text-decoration: underline;
+  color: var(--resaltar);
+}
