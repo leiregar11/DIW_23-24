@@ -8,7 +8,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css" >
+          
+    <script>
+      window.onload=inicio;
+      function inicio(){
+        document.getElementById("enviar").addEventListener("click", progreso);
+      }
+        
+        function progreso(){
+  // Obtener la barra de progreso
+  var progressBar = document.getElementById("bar");
+  
+  // Establecer el valor de la barra de progreso a 0
+  progressBar.style.width = "0%";
+  progressBar.setAttribute("aria-valuenow", "0");
+  
+  // Animar la barra de progreso
+  var width = 0;
+  var interval = setInterval(function() {
+    if (width >= 100) {
+      clearInterval(interval);
+      width = 0;
+      progressBar.style.width = "0%";
+      progressBar.setAttribute("aria-valuenow", "0");
+    } else {
+      width++;
+      progressBar.style.width = width + "%";
+      progressBar.setAttribute("aria-valuenow", width);
+    }
+  }, 100); // Intervalo de 100 milisegundos (0.1 segundos)
+}
 
+      
+      
+    </script> 
 </head>
 <body>
     
@@ -55,22 +88,68 @@
 </header>
     <div class="container">
         <div class="row contenidoPag">
-            
-
-
-            
-        </div>
-        
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <footer class="NavFooter text-center py-3">
-          <div class="container">
-            <p class="mb-0">© 2023 Mi Pueblo. Todos los derechos reservados.</p>
+  
+            <div class=" mb-3 col-12 col-md-6">
+              <label for="nombreyapellido" class="form-label valoFont">Nombre y apellido</label>
+              <input type="text" class="form-control"  id="nombreyapellido" placeholder="Nombre y apellido">
+              
           </div>
-        </footer>
-      </div>
-      
+          <div class=" mb-3 col-12 col-md-6">
+              <label for="email" class="valoFont">Correo electronico</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+              
+          </div>
+          <div class=" col-12">
+              <label for="comentarios" class="valoFont">Comentarios</label>
+              <textarea class="form-control " placeholder="Deja aqui tus comentarios" id="comentarios" rows="5"></textarea>
+              
+          </div>
+                <div class="d-grid gap-2 col-6 mx-auto divBotonEnviar">
+                  <button class="btn btn-primary botonEnviar" type="button" id="enviar">Enviar</button>
+                </div>
+        
+                <!-- progresBar -->
+                <div class="progress fondoProgress" >
+                  <div id="bar" class="progress-bar progress-bar-striped progress-bar-animated progressBarStyle"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    
+                  </div>
+                </div> 
+        </div>
     </div>
+    <footer class="NavFooter text-center py-3">
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+              <div >
+                <p >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>  Euskal Herria plaza 1 - 20230
+                </p>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                    Dentro del municipio, SAC: <a class="enlaceFondoOscuro" href="tel:010">010</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:092">092</a><br />
+                    Desde fuera, SAC: <a class="enlaceFondoOscuro" href="tel:943737030">943 73 70 30</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:943109662">943 10 96 62</a><br />
+                                Horario SAC: <span class="enlaceFondoOscuro">de lunes a viernes, de 07:30 a 15:00</span>
+                </p>
+              </div>
+              
+                    <p>
+                      <a class="enlaceFondoOscuro" href="/es/aviso-legal" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
+                      <a class="enlaceFondoOscuro" href="/es/politica-de-privacidad" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
+                      <a class="enlaceFondoOscuro" href="/es/politica-de-cookies" title="Política de cookies">Pol&iacute;tica de cookies</a>
+                    </p>
+           
+          </div>
+          <div class="col-6 ">
+            <img src="img/escudo.png" id="escudoFooter">
+          </div>
+        </div>
+      </div>
+   
+</footer>
 </body>
 </html>

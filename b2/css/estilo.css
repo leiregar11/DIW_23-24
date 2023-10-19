@@ -2,14 +2,27 @@
 #escudo {
     height: 70px;
     width: auto;
-    margin-right: 2%;
+    margin-right: 0.5%;
   }
 #escudoFooter{
   height: 10rem;
   width: auto;
-  margin-right: 2%;
 }
+#logoHome.col-7{ 
+  height: 71px; 
+  margin-right: 9%;
 
+}
+.col-xl-8 > #logoHome{ 
+  height: 71px; 
+  margin-right: 10rem;
+
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0 !important;
+  align-items: center;
+}
 .carrusel{
         border-radius: 5px;
         float: left;
@@ -53,10 +66,31 @@ h4{
 }
 .nav-link:hover{
   color: var(--resaltar) !important;
-  border: solid 2px var(--resaltar);
+  border: solid 2px var(--resaltar) !important;
   border-radius: 0.375rem;
 }
+.enviar{
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+.botonEnviar{
+  color: #000000 !important;
+  background-color: #48474745 !important;
+  border: #48474700;
+  margin: 2%;
+}
 
+.botonEnviar:hover{
+  color: #ffffffd4 !important;
+  background-color: var(--resaltar) !important;
+}
+.progressBarStyle{
+  background-color: var(--resaltar);
+}
+.fondoProgress{
+  background-color: #48474700;
+}
 a h1{
   color: var(--resaltar)!important;
 }
