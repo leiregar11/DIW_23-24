@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwild-Leire</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            borde: '#7C7C7C',
+            cHover: '#FF6347',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f2f1]">
+   
+    <div class="container mx-auto">
+        <header class="flex flex-wrap align-baseline p-10">
+            <h1 class="basis-4/5 text-4xl">ZUBIRI MANTEO</h1>
+            <img class=" rounded-full h-12 w-12  " src="logo.png" >
+        </header>
+        <nav class="border-2 border-borde">
+          <ul class="flex justify-center items-center justify-items-center">
+            <li class="mx-2 hover:bg-cHover rounded-md px-3 py-2 text-sm "><a href="#">INICIO</a></li>
+            <li class="mx-2 hover:bg-cHover rounded-md px-3 py-2 text-sm "><a href="#">QUIENES</a></li>
+            <li class="mx-2 hover:bg-cHover rounded-md px-3 py-2 text-sm "><a href="#">CURSOS</a></li>
+            <li class="mx-2 hover:bg-cHover rounded-md px-3 py-2 text-sm "><a href="#">CONTACTO</a>
+              
+            </li>
+          </ul>
+        </nav>
+        <div class="flex flex-row">
+          <div class="basis-1/2">
+            <h2 class="text-4xl text-center">INICIO</h2>
+
+            <div class="flex justify-center">
+            <img src="logo.png" class="h-30 w-30 m-2.5"></div>
+            <p class="text-justify my-1.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam repellendus suscipit debitis quaerat, ipsa quidem soluta aliquid expedita dignissimos deserunt animi fuga tempora labore? Animi suscipit odit eius autem.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis labore dolorum quo debitis. Blanditiis, quod laborum. Ab sapiente repudiandae, quas, odio nihil amet iure molestiae sit deleniti ipsam similique recusandae.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, necessitatibus, quod saepe optio consectetur repudiandae debitis incidunt fugit assumenda quae distinctio dolore esse facilis vel doloremque in! Iure, impedit reprehenderit!</p>
+          </div>
+          <div class="basis-1/2">
+            <h2 class="text-4xl text-center">NOTICIAS</h2>
+            <p class="text-justify my-1.5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quo error minima molestiae et aperiam mollitia, saepe optio dolorem nam architecto pariatur. Accusamus, placeat asperiores doloremque earum corporis unde necessitatibus.</p>
+            <h2 class="text-4xl text-center mt-14">VIDEO</h2>
+            <div class="flex justify-center">
+              <iframe class="w-50 m-2.5" src="https://www.youtube.com/embed/VzmtIUmjkTo?si=YxE471ih99SV6X6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
+            
+          </div>
+        </div>
+        <footer>
+          <h3 class="text-2xl text-center">ZUBIRI MANTEO</h3>
+        </footer>
+      </div>
+</body>
+</html>
