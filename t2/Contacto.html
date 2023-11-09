@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legazpi -B2</title>
+    <title>Legazpi -Tailwind </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css" >
           
     <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -25,68 +22,58 @@
     }
   </script>
     
+    
+  
 </head>
 <body>
     
-  
-  <nav class="bg-grisO p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="index.html" class="flex items-center justify-center">
-        
-          <img src="img/escudo.png"  class="h-20 w-auto mr-2">
-          <h1 class="text-rojo  font-bold text-2xl">Legazpi</h1>
-        
-      </a>
-  
-      <!-- Botón de hamburguesa para dispositivos móviles -->
-      <div class="block lg:hidden">
-        <button id="toggle-menu" class="text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
-  
-      <!-- Menú de navegación -->
-      <div class="hidden lg:flex flex-grow justify-center space-x-4" id="navbarSupportedContent">
-        <a href="Historia.html" class="text-blanco hover:bg-rojo rounded-md px-3 py-2 text-sm font-medium">Historia</a>
-        <a href="#" class="text-blanco hover:bg-rojo rounded-md px-3 py-2 text-sm font-medium">Fiestas</a>
-      
+  <nav class="bg-grisO ">
+    <div class="container mx-auto py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="img/escudo.png" alt="Escudo" class="h-14 w-auto">
+            <h1 class="text-3xl text-rojo font-bold">Legazpi</h1>
+          </a>
+        </div>
+       
+        <div class=" flex flex-grow items-center justify-end space-x-4">
+          <a href="Historia.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Historia</a>
+          <a href="Fiestas.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Fiestas</a>
+          <a href="Contacto.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Contactanos</a>
+        </div>
       </div>
     </div>
   </nav>
   
+  
     
-    <div class="px-24">
-        <div class="">
+    <div class="p-24">
   
           <form>
          
               <div class="border-b border-gray-900/10 pb-12">
-                <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-                <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
-          
+                <h2 class="text-base font-semibold leading-7 text-grisO">Contactanos</h2>
+                
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                   <div class="sm:col-span-3">
-                    <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                    <label for="first-name" class="block text-sm font-medium leading-6 text-grisO">Nombre</label>
                     <div class="mt-2">
-                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-10 py-1.5 text-grisO border-grisC ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                   </div>
           
                   <div class="sm:col-span-3">
-                    <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                    <label for="last-name" class="block text-sm font-medium leading-6 text-grisO">Email</label>
                     <div class="mt-2">
-                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-10 py-1.5 text-grisO border-grisC ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                   </div>
           
-                  <div class="sm:col-span-4">
-                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                  <div class="sm:col-span-6">
+                    <label for="email" class="block text-sm font-medium leading-6 text-grisO">Comentario</label>
                     <div class="mt-2">
-                      <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      <input id="email" name="email" type="email" autocomplete="email" class="block h-28 w-full rounded-md border-10 py-1.5 text-grisO border-grisC ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                     </div>
                   </div>
           
@@ -98,53 +85,66 @@
           
             <div class="mt-6 flex items-center justify-end gap-x-6">
               
-              <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-blanco shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
+              <button type="submit" id="enviar" class="rounded-md bg-grisC px-3 py-2 text-sm font-semibold hover:text-blanco shadow-sm hover:bg-rojo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
             </div>
           </form>
           
         
                 <!-- progresBar -->
-                
-                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                  <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+<!--                 
+               <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                    <div>
+                        <span class="">
+                            Fiestas celebradas este año
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-xs font-semibold inline-block text-rojo">
+                            90%
+                        </span>
+                    </div>
                 </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:grisC transition-all">
+                    <div id="bar" class="bg-rojo h-2.5 rounded-full" style="width: 90%"></div>
+                </div>
+            </div> -->
+            
 
-        </div>
+        
     </div>
-    <footer class="NavFooter text-center py-3">
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-              <div >
-                <p >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>  Euskal Herria plaza 1 - 20230
-                </p>
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos" viewBox="0 0 16 16">
+    <footer class="bg-grisO text-blanco py-6">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="w-full md:w-1/2 px-4">
+            <div class="mb-6">
+              <p class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos mr-2" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                Euskal Herria plaza 1 - 20230
+              </p>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos mr-2" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                 </svg>
-                    Dentro del municipio, SAC: <a class="enlaceFondoOscuro" href="tel:010">010</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:092">092</a><br />
-                    Desde fuera, SAC: <a class="enlaceFondoOscuro" href="tel:943737030">943 73 70 30</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:943109662">943 10 96 62</a><br />
-                                Horario SAC: <span class="enlaceFondoOscuro">de lunes a viernes, de 07:30 a 15:00</span>
-                </p>
-              </div>
-              
-                    <p>
-                      <a class="enlaceFondoOscuro" href="/es/aviso-legal" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
-                      <a class="enlaceFondoOscuro" href="/es/politica-de-privacidad" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
-                      <a class="enlaceFondoOscuro" href="/es/politica-de-cookies" title="Política de cookies">Pol&iacute;tica de cookies</a>
-                    </p>
-           
+                Dentro del municipio, SAC: <a href="tel:010" class="text-grisC">010</a> | Polic&iacute;a Municipal: <a href="tel:092" class="text-grisC">092</a><br />
+                Desde fuera, SAC: <a href="tel:943737030" class="text-grisC">943 73 70 30</a> | Polic&iacute;a Municipal: <a href="tel:943109662" class="text-grisC">943 10 96 62</a><br />
+                Horario SAC: <span class="text-grisC">de lunes a viernes, de 07:30 a 15:00</span>
+              </p>
+            </div>
+            <p>
+              <a href="/es/aviso-legal" class="text-grisC" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
+              <a href="/es/politica-de-privacidad" class="text-grisC" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
+              <a href="/es/politica-de-cookies" class="text-grisC" title="Política de cookies">Pol&iacute;tica de cookies</a>
+            </p>
           </div>
-          <div class="col-6 ">
-            <img src="img/escudo.png" id="escudoFooter">
+          <div class="w-1/2 px-4">
+            <img src="img/escudo.png" alt="Escudo" class=" h-36" >
           </div>
         </div>
       </div>
-   
-</footer>
+    </footer>
+    
 </body>
 </html>
