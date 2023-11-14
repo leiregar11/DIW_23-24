@@ -3,197 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legazpi -B2</title>
+    <title>Legazpi -Tailwind </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css" >
+          
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            grisO: '#2E2D2D',
+            blanco: '#FFFFFF',
+            rojo: '#D13239',
+            grisC: '#999',
+          }
+        }
+      }
+    }
 
+    
+  </script>
+    
+    <script>
+      // Initialization for ES Users
+import {
+  Carousel,
+  initTE,
+} from "tw-elements";
+
+initTE({ Carousel });
+    </script>
+  
 </head>
 <body>
     
-  <header class="container-fluid">
-        
-    <div class="row">
-            
-        <nav class="navbar navbar-expand-lg NavFooter">
-            <div class="container-fluid ">
-              <div class="col-xl-8 col-7" id="logoHome">
-                <a class="navbar-brand" href="index.html"><h1><img src="img/escudo.png" id="escudo">Legazpi</h1></a>
-            
-              </div>
-                
-                  <button class="navbar-toggler ml-auto custom-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+  <nav class="bg-grisO ">
+    <div class="container mx-auto py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="img/escudo.png" alt="Escudo" class="h-14 w-auto">
+            <h1 class="text-3xl text-rojo font-bold">Legazpi</h1>
+          </a>
+        </div>
+       
+        <div class=" flex flex-grow items-center justify-end space-x-4">
+          <a href="Historia.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Historia</a>
+          <a href="Fiestas.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Fiestas</a>
+          <a href="Contacto.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Contactanos</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-                
-                  
-                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
-                      <li class="nav-item btn">
-                        <a class="nav-link " aria-current="page" href="Historia.html">Historia</a>
-                      </li>
-                      <li class="nav-item btn">
-                        <a class="nav-link " aria-current="page" href="Fiestas.html">Fiestas</a>
-                      </li>
-                     
-                      
-                      <li class="nav-item btn">
-                        <a class="nav-link" href="Contacto.html">Contactanos</a>
-                      </li>
-                    </ul>
-                
-              </div>
-            </div>
-          </nav>
-
-
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 contenidoPag">
+        <div class="lg:col-span-20">
+          
+          <img src="img/inicio/1.jpg" class="w-full" alt="...">
           
         </div>
-        
-</header>
-
-    <div class="container">
-        <div class="row contenidoPag">
-            <div class=" col-lg-4">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/inicio/1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/5.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/6.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/inicio/7.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <p>
-                    Legazpi es un municipio íntimamente <strong>ligado a la transformación del hierro</strong>, favorecida por la riqueza forestal y la actividad minera de la zona. En este sentido, el visitante que llega al municipio tiene la oportunidad de conocer más a fondo todos los detalles de este oficio en el <strong>museo del hierro y en la ferrería de Mirandaola</strong>, ubicado en un hermoso paraje en las faldas del <strong>Parque Natural de Aizkorri</strong>
-                </p> 
-                <h4>
-                    Orígenes del pueblo</h4>
-                <p>
-                    El hecho de que en el municipio existan vestigios de antiguas ferrerías, que conservan todavía los nombres de Jentiletxe y Jentilola (casa y ferrería de gentiles) ha dado motivo para suponer que la existencia es del tiempo de los gentiles y anterior a Jesucristo. La alusión escrita y precisa más antigua que conocemos acerca de la existencia de Legazpi remonta a 1290. La realiza Sancho IV de Castilla cuando dice:</p>
-                
-                
-            </div>
-            <div class="col-12">
-                <p>
-                <em>"...tengo por bien que las ferrerias que son en Legazpi masuqueras, que estan en yermo, e las hacen robos los malos homes e los robadores, que vengan más cerca de la villa de Segura..."</em></p>
-                
-                
-                <h4>
-                    Etimología de Legazpi</h4>
-                <p>
-                    Todos coinciden en interpretar "azpi" como "debajo". No hay sin embargo, acuerdo para el principio del nombre.</p>
-                <p>"Legats" = tierra grijosa (referida a la de los montes),</p>
-                <p>
-                    "Legatz" = merluza (recordado los dos peces del escudo),<br />
-                    "Leku" = lugar (lugar por estar en un valle entre montes altos)</p>
-                
-                <p>
-                    La interpretación más probable es ésta: según se sabe los ferrones se surtían de hierro en las minas de los montes cercanos, Lekanburu en concreto (hoy llamado Oilargain, en Mutiloa). Después lo elaboran en el valle, a orillas del Urola. Llamaron Lekan-buru a la cabeza o cima de Lekan y "Lekan-azpi" (Lekazpi, Legazpi) al lugar bajo las minas de Lekan, Es decir, que Legazpi es la parte baja y Lekanburu la parte alta de un mismo lugar geográfico.</p>
-                
-                <h4>
-                    Núcleo urbano</h4>
-                <p>
-                    Posiblemente el núcleo naciera en 1608, tras la exención de Segura. El plano más antiguo conservado de Legazpi, hay que fecharlo en 1805, el casco urbano lo constituía una calle regular, plaza, hospital, ayuntamiento, posada pública, 40 casas, además de iglesia parroquial, lo completaba un entorno con 124 caserios dispersos. Hasta 1920 se dan pocas transformaciones. El crecimiento industrial va ocasionar el ensanche del casco urbano (escuelas y frontón) y en la década 30-40 la Calle Nueva.&nbsp;</p>
-                
-                <p>
-                    Desde 1940 se va a dar la creación de los Barrios urbanos: el Ensanche Oeste (San Ignacio, Aránzazu,...) barrios acordes a los criterios urbanísticos más avanzados de la época. A partir de 1956, una segunda etapa Ensanches Norte (Urtatza, Laubide...) y Sur (Itxaropen, Almirante Bikuña) realizadas tras la promulgación de la Ley del Suelo y Ministerio de la Vivienda.&nbsp;Los barrios rurales: Brinkola, adquirió importancia con la construcción del ferrocarril en 1864, distanciado del casco urbano por 2 km.&nbsp;Telleriarte, del casco urbano a 1km., el solar Elorregi dominó antiguamente el barrio y montes vecinos. Se prolonga a lo largo de la carretera Oñati-Legazpi.</p>
-            </div>
+        <div class="lg:col-span-8">
+            <p>
+                Legazpi es un municipio íntimamente <strong>ligado a la transformación del hierro</strong>, favorecida por la riqueza forestal y la actividad minera de la zona. En este sentido, el visitante que llega al municipio tiene la oportunidad de conocer más a fondo todos los detalles de este oficio en el <strong>museo del hierro y en la ferrería de Mirandaola</strong>, ubicado en un hermoso paraje en las faldas del <strong>Parque Natural de Aizkorri</strong>
+            </p> 
+            <h4>
+                Orígenes del pueblo</h4>
+            <p>
+                El hecho de que en el municipio existan vestigios de antiguas ferrerías, que conservan todavía los nombres de Jentiletxe y Jentilola (casa y ferrería de gentiles) ha dado motivo para suponer que la existencia es del tiempo de los gentiles y anterior a Jesucristo. La alusión escrita y precisa más antigua que conocemos acerca de la existencia de Legazpi remonta a 1290. La realiza Sancho IV de Castilla cuando dice:</p>
+            
+            
         </div>
-        
+        <div class="col-span-12">
+            <p>
+            <em>"...tengo por bien que las ferrerias que son en Legazpi masuqueras, que estan en yermo, e las hacen robos los malos homes e los robadores, que vengan más cerca de la villa de Segura..."</em></p>
+            
+            
+            <h4>
+                Etimología de Legazpi</h4>
+            <p>
+                Todos coinciden en interpretar "azpi" como "debajo". No hay sin embargo, acuerdo para el principio del nombre.</p>
+            <p>"Legats" = tierra grijosa (referida a la de los montes),</p>
+            <p>
+                "Legatz" = merluza (recordado los dos peces del escudo),<br />
+                "Leku" = lugar (lugar por estar en un valle entre montes altos)</p>
+            
+            <p>
+                La interpretación más probable es ésta: según se sabe los ferrones se surtían de hierro en las minas de los montes cercanos, Lekanburu en concreto (hoy llamado Oilargain, en Mutiloa). Después lo elaboran en el valle, a orillas del Urola. Llamaron Lekan-buru a la cabeza o cima de Lekan y "Lekan-azpi" (Lekazpi, Legazpi) al lugar bajo las minas de Lekan, Es decir, que Legazpi es la parte baja y Lekanburu la parte alta de un mismo lugar geográfico.</p>
+            
+            <h4>
+                Núcleo urbano</h4>
+            <p>
+                Posiblemente el núcleo naciera en 1608, tras la exención de Segura. El plano más antiguo conservado de Legazpi, hay que fecharlo en 1805, el casco urbano lo constituía una calle regular, plaza, hospital, ayuntamiento, posada pública, 40 casas, además de iglesia parroquial, lo completaba un entorno con 124 caserios dispersos. Hasta 1920 se dan pocas transformaciones. El crecimiento industrial va ocasionar el ensanche del casco urbano (escuelas y frontón) y en la década 30-40 la Calle Nueva.&nbsp;</p>
+            
+            <p>
+                Desde 1940 se va a dar la creación de los Barrios urbanos: el Ensanche Oeste (San Ignacio, Aránzazu,...) barrios acordes a los criterios urbanísticos más avanzados de la época. A partir de 1956, una segunda etapa Ensanches Norte (Urtatza, Laubide...) y Sur (Itxaropen, Almirante Bikuña) realizadas tras la promulgación de la Ley del Suelo y Ministerio de la Vivienda.&nbsp;Los barrios rurales: Brinkola, adquirió importancia con la construcción del ferrocarril en 1864, distanciado del casco urbano por 2 km.&nbsp;Telleriarte, del casco urbano a 1km., el solar Elorregi dominó antiguamente el barrio y montes vecinos. Se prolonga a lo largo de la carretera Oñati-Legazpi.</p>
+        </div>
     </div>
-    <footer class="NavFooter text-center py-3 ">
     
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                  <div >
-                    <p >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                      </svg>  Euskal Herria plaza 1 - 20230
-                    </p>
-                    <p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                    </svg>
-                        Dentro del municipio, SAC: <a class="enlaceFondoOscuro" href="tel:010">010</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:092">092</a><br />
-                        Desde fuera, SAC: <a class="enlaceFondoOscuro" href="tel:943737030">943 73 70 30</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:943109662">943 10 96 62</a><br />
-                                    Horario SAC: <span class="enlaceFondoOscuro">de lunes a viernes, de 07:30 a 15:00</span>
-                    </p>
-                  </div>
-                  
-                        <p>
-                          <a class="enlaceFondoOscuro" href="/es/aviso-legal" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
-                          <a class="enlaceFondoOscuro" href="/es/politica-de-privacidad" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
-                          <a class="enlaceFondoOscuro" href="/es/politica-de-cookies" title="Política de cookies">Pol&iacute;tica de cookies</a>
-                        </p>
-               
-              </div>
-              <div class="col-6 ">
-                <img src="img/escudo.png" id="escudoFooter">
-              </div>
+</div>
+   
+    <footer class="bg-grisO text-blanco py-6">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="w-full md:w-1/2 px-4">
+            <div class="mb-6">
+              <p class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos mr-2" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                Euskal Herria plaza 1 - 20230
+              </p>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos mr-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                Dentro del municipio, SAC: <a href="tel:010" class="text-grisC">010</a> | Polic&iacute;a Municipal: <a href="tel:092" class="text-grisC">092</a><br />
+                Desde fuera, SAC: <a href="tel:943737030" class="text-grisC">943 73 70 30</a> | Polic&iacute;a Municipal: <a href="tel:943109662" class="text-grisC">943 10 96 62</a><br />
+                Horario SAC: <span class="text-grisC">de lunes a viernes, de 07:30 a 15:00</span>
+              </p>
             </div>
+            <p>
+              <a href="/es/aviso-legal" class="text-grisC" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
+              <a href="/es/politica-de-privacidad" class="text-grisC" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
+              <a href="/es/politica-de-cookies" class="text-grisC" title="Política de cookies">Pol&iacute;tica de cookies</a>
+            </p>
           </div>
-       
+          <div class="w-1/2 px-4">
+            <img src="img/escudo.png" alt="Escudo" class=" h-36" >
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 </html>

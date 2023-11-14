@@ -1,120 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legazpi -B2</title>
+    <title>Legazpi -Tailwind </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css" >
-
+          
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            grisO: '#2E2D2D',
+            blanco: '#FFFFFF',
+            rojo: '#D13239',
+            grisC: '#999',
+          }
+        }
+      }
+    }
+  </script>
+    
+    
+  
 </head>
 <body>
     
-  <header class="container-fluid">
-        
-    <div class="row">
-            
-        <nav class="navbar navbar-expand-lg NavFooter">
-            <div class="container-fluid ">
-              <div class="col-xl-8 col-7" id="logoHome">
-                <a class="navbar-brand" href="index.html"><h1><img src="img/escudo.png" id="escudo">Legazpi</h1></a>
-            
-              </div>
-                
-                  <button class="navbar-toggler ml-auto custom-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                
-                  
-                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
-                      <li class="nav-item btn">
-                        <a class="nav-link active" aria-current="page" href="Historia.html">Historia</a>
-                      </li>
-                      <li class="nav-item btn">
-                        <a class="nav-link " aria-current="page" href="Fiestas.html">Fiestas</a>
-                      </li>
-                     
-                      
-                      <li class="nav-item btn">
-                        <a class="nav-link" href="Contacto.html">Contactanos</a>
-                      </li>
-                    </ul>
-                
-              </div>
-            </div>
-          </nav>
-
-
-          
+  <nav class="bg-grisO ">
+    <div class="container mx-auto py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="img/escudo.png" alt="Escudo" class="h-14 w-auto">
+            <h1 class="text-3xl text-rojo font-bold">Legazpi</h1>
+          </a>
         </div>
-        
-</header>
-    
-    <div class="container">
-        <div class="row contenidoPag">
-
-            <div > 
-                <h4>Historia de Legazpi</h4>
-                <div class="d-none d-md-block"> 
-                <img src="img/historia.jpeg" class="w-25 imgHistoria"/>
-                </div>
-                <div class="d-block d-md-none"> 
-                    <img src="img/historia.jpeg" class="w-50 imgHistoria"/>
-                </div>
-                <p>
-                  La historia de Legazpi, una localidad en el valle de Legazpi, está marcada por una rica diversidad de acontecimientos y cambios a lo largo de los siglos. Antes de la llegada del cristianismo, el área era habitada por los "gentiles", quienes poseían conocimientos sobre la obtención del hierro en primitivos hornos conocidos como "haizeolas". La presencia de túmulos megalíticos en la región indica una antigua cultura pastoril que se remonta a unos 4000 años atrás, durante la época neolítica.<br><br>
-      
-      En el siglo XIV, se estableció la producción de hierro en ferrerías en el valle de Legazpi. Los "ferrones", propietarios de las ferrerías y tierras, y los agricultores-ganaderos ("baserritarras") coexistían en la región, aunque con diferentes derechos y leyes. En 1384, Legazpi se unió a la jurisdicción de la villa de Segura para fortalecerse contra amenazas externas y conflictos internos.<br><br>
-      
-      En 1608, Legazpi logró independizarse de Segura, obteniendo su propia jurisdicción y gobierno local. Sin embargo, enfrentó desafíos económicos debido a la competencia del hierro importado de Europa. La introducción de ferrerías de agua en el siglo XVIII marcó un cambio en la industria del hierro, pero la crisis económica persistió.<br><br>
-      
-      A finales del siglo XIX, la última ferrería legazpiarra se convirtió en un molino, y los ferrones abandonaron sus actividades, convirtiéndose en agricultores y perdiendo así su estatus social. En el siglo XX, Legazpi experimentó un renacimiento económico con la construcción del ferrocarril y el establecimiento de nuevas industrias, como la fábrica de Patricio Echeverría en 1908. Durante la Guerra Civil, la villa fue militarizada y vivió tiempos difíciles, pero después de la guerra, experimentó un crecimiento demográfico debido a la llegada de inmigrantes para trabajar en las nuevas industrias. A partir de la década de 1980, la economía de Legazpi sufrió una crisis, lo que llevó a una disminución en la población.<br><br>
-      
-      A lo largo de su historia, Legazpi ha enfrentado desafíos económicos y sociales, pero ha demostrado resiliencia y adaptabilidad, lo que ha contribuido a su evolución como comunidad a lo largo de los siglos.
-            </p>
-            </div>
-           
-                
+       
+        <div class=" flex flex-grow items-center justify-end space-x-4">
+          <a href="Historia.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Historia</a>
+          <a href="Fiestas.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Fiestas</a>
+          <a href="Contacto.html" class="text-blanco transition duration-300 hover:text-rojo hover:border-rojo hover:border-2 hover:border-solid hover:rounded-md">Contactanos</a>
         </div>
+      </div>
     </div>
-    <footer class="NavFooter text-center py-3">
+  </nav>
     
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-              <div >
-                <p >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                  </svg>  Euskal Herria plaza 1 - 20230
-                </p>
-                <p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos" viewBox="0 0 16 16">
+  <div class="px-24  py-16">
+    <h4 class="text-4xl font-medium mb-4">Historia de Legazpi</h4>
+
+    <div class="flex flex-col lg:flex-row mb-4">
+      <p class="lg:w-7/12 mr-4 mb-4 lg:mb-0">La historia de Legazpi, una localidad en el valle de Legazpi, está marcada por una rica diversidad de acontecimientos y cambios a lo largo de los siglos. Antes de la llegada del cristianismo, el área era habitada por los "gentiles", quienes poseían conocimientos sobre la obtención del hierro en primitivos hornos conocidos como "haizeolas". La presencia de túmulos megalíticos en la región indica una antigua cultura pastoril que se remonta a unos 4000 años atrás, durante la época neolítica.<br><br>
+      
+        En el siglo XIV, se estableció la producción de hierro en ferrerías en el valle de Legazpi. Los "ferrones", propietarios de las ferrerías y tierras, y los agricultores-ganaderos ("baserritarras") coexistían en la región, aunque con diferentes derechos y leyes. En 1384, Legazpi se unió a la jurisdicción de la villa de Segura para fortalecerse contra amenazas externas y conflictos internos.<br><br>
+        
+        En 1608, Legazpi logró independizarse de Segura, obteniendo su propia jurisdicción y gobierno local. Sin embargo, enfrentó desafíos económicos debido a la competencia del hierro importado de Europa. La introducción de ferrerías de agua en el siglo XVIII marcó un cambio en la industria del hierro, pero la crisis económica persistió.<br><br>
+        
+        A finales del siglo XIX, la última ferrería legazpiarra se convirtió en un molino, y los ferrones abandonaron sus actividades, convirtiéndose en agricultores y perdiendo así su estatus social. En el siglo XX, Legazpi experimentó un renacimiento económico con la construcción del ferrocarril y el establecimiento de nuevas industrias, como la fábrica de Patricio Echeverría en 1908. Durante la Guerra Civil, la villa fue militarizada y vivió tiempos difíciles, pero después de la guerra, experimentó un crecimiento demográfico debido a la llegada de inmigrantes para trabajar en las nuevas industrias. A partir de la década de 1980, la economía de Legazpi sufrió una crisis, lo que llevó a una disminución en la población.<br><br>
+        
+        A lo largo de su historia, Legazpi ha enfrentado desafíos económicos y sociales, pero ha demostrado resiliencia y adaptabilidad, lo que ha contribuido a su evolución como comunidad a lo largo de los siglos.
+              </p>
+      <img class="h-80 w-2/6" src="img/historia.jpeg" alt="legazpi">
+    </div>
+ 
+    
+      
+
+  
+    </div>
+    
+    <footer class="bg-grisO text-blanco py-6">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="w-full md:w-1/2 px-4">
+            <div class="mb-6">
+              <p class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill iconos mr-2" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                Euskal Herria plaza 1 - 20230
+              </p>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill iconos mr-2" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                 </svg>
-                    Dentro del municipio, SAC: <a class="enlaceFondoOscuro" href="tel:010">010</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:092">092</a><br />
-                    Desde fuera, SAC: <a class="enlaceFondoOscuro" href="tel:943737030">943 73 70 30</a> | Polic&iacute;a Municipal: <a class="enlaceFondoOscuro" href="tel:943109662">943 10 96 62</a><br />
-                                Horario SAC: <span class="enlaceFondoOscuro">de lunes a viernes, de 07:30 a 15:00</span>
-                </p>
-              </div>
-              
-                    <p>
-                      <a class="enlaceFondoOscuro" href="/es/aviso-legal" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
-                      <a class="enlaceFondoOscuro" href="/es/politica-de-privacidad" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
-                      <a class="enlaceFondoOscuro" href="/es/politica-de-cookies" title="Política de cookies">Pol&iacute;tica de cookies</a>
-                    </p>
-           
+                Dentro del municipio, SAC: <a href="tel:010" class="text-grisC">010</a> | Polic&iacute;a Municipal: <a href="tel:092" class="text-grisC">092</a><br />
+                Desde fuera, SAC: <a href="tel:943737030" class="text-grisC">943 73 70 30</a> | Polic&iacute;a Municipal: <a href="tel:943109662" class="text-grisC">943 10 96 62</a><br />
+                Horario SAC: <span class="text-grisC">de lunes a viernes, de 07:30 a 15:00</span>
+              </p>
+            </div>
+            <p>
+              <a href="/es/aviso-legal" class="text-grisC" title="Aviso legal">Aviso legal&nbsp;</a> |&nbsp;
+              <a href="/es/politica-de-privacidad" class="text-grisC" title="Política de privacidad">Pol&iacute;tica de privacidad</a>&nbsp; |&nbsp; 
+              <a href="/es/politica-de-cookies" class="text-grisC" title="Política de cookies">Pol&iacute;tica de cookies</a>
+            </p>
           </div>
-          <div class="col-6 ">
-            <img src="img/escudo.png" id="escudoFooter">
+          <div class="w-1/2 px-4">
+            <img src="img/escudo.png" alt="Escudo" class=" h-36" >
           </div>
         </div>
       </div>
-   
-</footer>
+    </footer>
 </body>
 </html>
