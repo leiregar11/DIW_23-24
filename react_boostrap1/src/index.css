@@ -1,0 +1,52 @@
+:root{
+  --oscuro:#3E5151;
+  --hoverNav:#789e9e;
+  --claro:#DECBA4;
+  --negro:#1b1b1b;
+  --blanco:#ffffff;
+}
+#titulo{
+  padding: 2%;
+}
+#logo{
+  
+  border: black 1.6px solid;
+  border-radius: 50%;
+  width: 60px;
+  box-shadow: 4px 4px 4px 4px black;
+  padding: 2%;
+}
+body{
+background: linear-gradient(to left, var(--oscuro), var(--claro)); 
+/* color: var(--negro); */
+
+}
+.header{
+  padding: 1%;
+}
+.nav-link:hover{
+  background-color: var(--hoverNav) !important;
+}
+textarea{
+  resize: none;
+}
+#formGroupExampleInput2{
+  height: 250px;
+}
+.btn{
+  margin: 1%;
+  background-color: var(--oscuro);
+  color: var(--blanco);
+}
+.btn:hover{
+  background-color: none;
+  color: var(--negro);
+}
+.textoLargo{
+  color: var(--blanco);
+  text-align: justify;
+}
+.tBlanco{
+  color: var(--blanco);
+  font-size: xx-large;
+}
